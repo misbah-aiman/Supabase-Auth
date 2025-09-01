@@ -22,7 +22,7 @@ const handleSignOut = async (e) => {
 return (
   <div>
   <h1>Dashboard</h1>
-  <h2>Welcome, {session?.user?.email}</h2>
+  <h2>Welcome {session?.user?.email}</h2>
   <div>
   <p
   onClick={handleSignOut}
