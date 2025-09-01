@@ -34,9 +34,6 @@ const Signup = () => {
     <div>
       <form onSubmit={handleSignUp} className="max-w-md m-auto pt-24">
         <h2 className="font-bold pb-2">Sign up today!</h2>
-        <p>
-          Already have an account? <Link to="/">Sign in</Link>
-        </p>
         <div className="flex flex-col py-4">
           {/* <label htmlFor="Email">Email</label> */}
           <input
@@ -64,6 +61,9 @@ const Signup = () => {
         </button>
         {error && <p className="text-red-600 text-center pt-4">{error}</p>}
       </form>
+      <p>
+          Already have an account? <Link to="/">Sign in</Link>
+        </p>
     </div>
   );
 };
